@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dodgeball Auckland</title>
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: '#facc15',
+              red: '#ef4444',
+              dark: '#111827'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <meta
+    name="description"
+    content="Play dodgeball in Auckland! Social and competitive leagues for all ages and skill levels across multiple locations."
+  />
+</head>
+<body class="bg-slate-950 text-slate-100">
+  <!-- Page wrapper -->
+  <div class="min-h-screen flex flex-col">
+
+    <!-- NAVBAR -->
+    <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="#top" class="flex items-center space-x-2">
+          <!-- Placeholder logo circle -->
+          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-brand-yellow to-brand-red flex items-center justify-center text-slate-900 font-black">
+            DA
+          </div>
+          <div class="flex flex-col leading-tight">
+            <span class="font-semibold tracking-tight text-sm sm:text-base">
+              Dodgeball Auckland
+            </span>
+            <span class="text-[11px] text-slate-400">
+              Play • Move • Belong
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#leagues" class="hover:text-brand-yellow transition">Leagues</a>
+          <a href="#youth" class="hover:text-brand-yellow transition">Youth</a>
+          <a href="#how-it-works" class="hover:text-brand-yellow transition">How it works</a>
+          <a href="#register" class="hover:text-brand-yellow transition">Register</a>
+          <a href="#contact" class="hover:text-brand-yellow transition">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="top" class="flex-1">
+
+      <!-- HERO -->
+      <section class="relative overflow-hidden">
+        <!-- fun background -->
+        <div
+          class="pointer-events-none absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_top,_#facc1544,_transparent_55%),radial-gradient(circle_at_bottom,_#ef444433,_transparent_55%)]">
+        </div>
+
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Text -->
+          <div>
+            <p class="inline-flex items-center px-3 py-1 rounded-full border border-slate-700 bg-slate-900/70 text-xs tracking-wide mb-4">
+              Non-profit run by players · Social & competitive
+            </p>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight mb-4">
+              Play Dodgeball in <span class="text-brand-yellow">Auckland</span>.
+            </h1>
+
+            <p class="text-slate-300 text-sm sm:text-base max-w-xl mb-6">
+              Dodgeball Auckland Inc. is a nonprofit society established by dodgeball players for dodgeballers. 
+              We run weekly games for all ages and skill levels across multiple locations – turn up, throw balls, 
+              listen to music, and de-stress with your squad.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+              <a
+                href="#register"
+                class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-medium bg-brand-yellow text-slate-900 hover:bg-yellow-300 transition"
+              >
+                Register to play
+              </a>
+              <a
+                href="#leagues"
+                class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-medium border border-slate-600 text-slate-100 hover:border-brand-yellow hover:text-brand-yellow transition"
+              >
+                View leagues
+              </a>
+            </div>
+
+            <p class="text-xs text-slate-400">
+              Join with a team or as an individual · New players welcome · All abilities
+            </p>
+          </div>
+
+          <!-- Visual -->
+          <div class="relative">
+            <div class="aspect-[4/3] rounded-3xl bg-slate-900/70 border border-slate-800 p-4 flex flex-col justify-between">
+              <div class="grid grid-cols-3 gap-3 mb-4 text-xs">
+                <div class="rounded-2xl bg-slate-800/80 p-3 flex flex-col justify-between">
+                  <span class="text-[11px] text-slate-400">Central</span>
+                  <p class="font-semibold mt-1">Grey Lynn</p>
+                  <p class="text-[11px] text-brand-yellow mt-2">Mon · Womens Social</p>
+                </div>
+                <div class="rounded-2xl bg-slate-800/80 p-3 flex flex-col justify-between">
+                  <span class="text-[11px] text-slate-400">Central</span>
+                  <p class="font-semibold mt-1">Epsom</p>
+                  <p class="text-[11px] text-brand-yellow mt-2">Thu · Social</p>
+                </div>
+                <div class="rounded-2xl bg-slate-800/80 p-3 flex flex-col justify-between">
+                  <span class="text-[11px] text-slate-400">Central & East</span>
+                  <p class="font-semibold mt-1">Onehunga & Pakuranga</p>
+                  <p class="text-[11px] text-brand-yellow mt-2">Wed / Mon · Social</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 text-xs">
+                <div class="rounded-2xl bg-slate-800/80 p-4 flex flex-col justify-between">
+                  <p class="font-semibold mb-1">Youth Dodgeball</p>
+                  <p class="text-[12px] text-slate-300">
+                    Under-16 league with friendly coaches and a focus on fun & fundamentals.
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-slate-800/80 p-4 flex flex-col justify-between">
+                  <p class="font-semibold mb-1">Competitive Pathway</p>
+                  <p class="text-[12px] text-slate-300">
+                    Step up into Premier League, draft events, and representative teams.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEAGUES -->
+      <section id="leagues" class="border-t border-slate-800 bg-slate-950/70">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-18">
+          <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-2">Leagues</h2>
+              <p class="text-sm text-slate-300 max-w-xl">
+                Weekly games across Auckland. Click a league for details like time, venue and season dates.
+              </p>
+            </div>
+            <p class="text-xs text-slate-400">
+              Social · Mixed & Womens · New players welcome
+            </p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 text-sm">
+            <!-- Grey Lynn -->
+            <a href="#" class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4 flex flex-col justify-between hover:border-brand-yellow transition">
+              <div>
+                <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">(Mon) Central</p>
+                <h3 class="font-semibold mb-1">Grey Lynn · Womens</h3>
+                <p class="text-xs text-slate-300 mb-3">
+                  Womens-only league with a friendly, supportive vibe for all experience levels.
+                </p>
+              </div>
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span>Social Dodgeball</span>
+                <span class="group-hover:text-brand-yellow">View details →</span>
+              </div>
+            </a>
+
+            <!-- Epsom -->
+            <a href="#" class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4 flex flex-col justify-between hover:border-brand-yellow transition">
+              <div>
+                <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">(Thurs) Central</p>
+                <h3 class="font-semibold mb-1">Epsom</h3>
+                <p class="text-xs text-slate-300 mb-3">
+                  Social mixed league – bring a team or register as an individual and we'll place you.
+                </p>
+              </div>
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span>Social Dodgeball</span>
+                <span class="group-hover:text-brand-yellow">View details →</span>
+              </div>
+            </a>
+
+            <!-- Onehunga -->
+            <a href="#" class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4 flex flex-col justify-between hover:border-brand-yellow transition">
+              <div>
+                <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">(Wed) Central · 3rd party</p>
+                <h3 class="font-semibold mb-1">Onehunga</h3>
+                <p class="text-xs text-slate-300 mb-3">
+                  Partner league with Dodgeball For All – inclusive, accessible dodgeball for everyone.
+                </p>
+              </div>
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span>Dodgeball For All</span>
+                <span class="group-hover:text-brand-yellow">Visit site →</span>
+              </div>
+            </a>
+
+            <!-- Pakuranga -->
+            <a href="#" class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4 flex flex-col justify-between hover:border-brand-yellow transition">
+              <div>
+                <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">(Mon) East · 3rd party</p>
+                <h3 class="font-semibold mb-1">Pakuranga</h3>
+                <p class="text-xs text-slate-300 mb-3">
+                  East Auckland social league with a strong community and relaxed, fun games.
+                </p>
+              </div>
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span>Dodgeball For All</span>
+                <span class="group-hover:text-brand-yellow">Visit site →</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- YOUTH -->
+      <section id="youth" class="border-t border-slate-800 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-18 grid lg:grid-cols-[3fr_2fr] gap-10 items-center">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-3">
+              Youth Dodgeball (Under 16)
+            </h2>
+            <p class="text-sm text-slate-300 mb-4">
+              Our youth leagues give tamariki and rangatahi a fun, safe and fast-paced way to move, build
+              confidence and make new friends.
+            </p>
+            <ul class="space-y-2 text-sm text-slate-300">
+              <li>• Age-appropriate rules and equipment</li>
+              <li>• Emphasis on inclusion, teamwork and fair play</li>
+              <li>• Supportive coaches with experience in youth sport</li>
+              <li>• Great for school teams or individuals keen to try something new</li>
+            </ul>
+          </div>
+          <div class="rounded-3xl border border-slate-800 bg-slate-900/80 p-5 text-sm">
+            <h3 class="font-semibold mb-2">Current youth league</h3>
+            <p class="text-slate-300 mb-3">
+              Central Onehunga Youth League – run in partnership with Dodgeball For All.
+            </p>
+            <p class="text-xs text-slate-400 mb-4">
+              Season dates, fees and registration links will be posted here, or contact us below for the latest info.
+            </p>
+            <a href="#register" class="inline-flex items-center px-4 py-2 rounded-full bg-brand-yellow text-slate-900 text-xs font-medium hover:bg-yellow-300 transition">
+              Register interest for youth leagues
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how-it-works" class="border-t border-slate-800 bg-slate-950/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-18">
+          <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-2">
+                How it works
+              </h2>
+              <p class="text-sm text-slate-300 max-w-xl">
+                Whether you’ve played before or you’re brand new, joining a league is simple.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6 text-sm">
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+              <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">Step 1</p>
+              <h3 class="font-semibold mb-2">Choose your league</h3>
+              <p class="text-slate-300">
+                Pick a night and location that works for you from our social, womens and youth options.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+              <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">Step 2</p>
+              <h3 class="font-semibold mb-2">Register online</h3>
+              <p class="text-slate-300">
+                Complete the quick Google Form – join with friends as a team or sign up solo and we’ll place you.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+              <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">Step 3</p>
+              <h3 class="font-semibold mb-2">Show up & play</h3>
+              <p class="text-slate-300">
+                Turn up on game night, meet your team, warm up and get throwing. Music, good vibes, high-energy fun.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REGISTER (GOOGLE FORM) -->
+      <section id="register" class="border-t border-slate-800 bg-slate-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-18">
+          <div class="mb-6 text-center">
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-2">
+              Register to play
+            </h2>
+            <p class="text-sm text-slate-300 max-w-2xl mx-auto">
+              Use the form below to register as a team or individual. We’ll confirm your league placement,
+              fees and start date by email.
+            </p>
+          </div>
+
+          <!-- GOOGLE FORM EMBED -->
+          <div class="rounded-3xl border border-slate-800 bg-slate-900/80 p-3 sm:p-4">
+            <!-- Replace the src with Joanna's actual Google Form link -->
+            <div class="aspect-[4/5] sm:aspect-[4/3]">
+              <iframe
+                class="w-full h-full rounded-2xl border-0"
+                src="https://docs.google.com/forms/d/e/REPLACE_WITH_FORM_ID/viewform?embedded=true"
+                loading="lazy"
+              >
+                Loading…
+              </iframe>
+            </div>
+          </div>
+
+          <p class="mt-4 text-xs text-center text-slate-400">
+            Having trouble with the form? Email us at
+            <a href="mailto:info@dodgeballauckland.com" class="text-brand-yellow hover:underline">
+              info@dodgeballauckland.com
+            </a>
+            and we’ll get you sorted.
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTACT & FOOTER -->
+      <footer id="contact" class="border-t border-slate-800 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-sm">
+          <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h3 class="font-semibold mb-2">Contact</h3>
+              <p class="text-slate-300 mb-1">
+                Email: <a href="mailto:info@dodgeballauckland.com" class="text-brand-yellow hover:underline">info@dodgeballauckland.com</a>
+              </p>
+              <p class="text-slate-300 mb-1">
+                Phone: <span class="text-slate-200">+64 xx xxx xxxx</span>
+              </p>
+              <p class="text-slate-300">
+                Location: <span class="text-slate-200">Auckland, New Zealand</span>
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold mb-2">Follow</h3>
+              <ul class="space-y-1 text-slate-300">
+                <li><a href="#" class="hover:text-brand-yellow">Facebook</a></li>
+                <li><a href="#" class="hover:text-brand-yellow">Instagram</a></li>
+                <li><a href="#" class="hover:text-brand-yellow">TikTok</a></li>
+                <li><a href="#" class="hover:text-brand-yellow">YouTube</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-semibold mb-2">About Dodgeball Auckland</h3>
+              <p class="text-slate-300 text-xs">
+                Dodgeball Auckland Inc. is a non-profit society run by volunteers, promoting inclusive,
+                accessible dodgeball across Tāmaki Makaurau. Social nights through to competitive pathways –
+                there’s a place for you.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-slate-800 pt-4 text-xs text-slate-500">
+            <p>© <span id="year"></span> Dodgeball Auckland Inc.</p>
+            <p>Site built with ❤️ by volunteers.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
