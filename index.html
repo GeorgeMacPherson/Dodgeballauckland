@@ -13,9 +13,11 @@
         extend: {
           colors: {
             brand: {
-              yellow: '#facc15',
-              red: '#ef4444',
-              dark: '#111827'
+              blue: '#1D4ED8',       /* Main royal blue */
+              blueLight: '#3B82F6',  /* Accent blue */
+              blueDark: '#1E3A8A',   /* Deep navy/royal */
+              dark: '#0F172A',       /* Deep background */
+              white: '#ffffff'
             }
           }
         }
@@ -38,7 +40,7 @@
         <!-- Logo -->
         <a href="#top" class="flex items-center space-x-2">
           <!-- Placeholder logo circle -->
-          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-brand-yellow to-brand-red flex items-center justify-center text-slate-900 font-black">
+          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-brand-blue to-brand-blueLight flex items-center justify-center text-white font-black">
             DA
           </div>
           <div class="flex flex-col leading-tight">
@@ -53,11 +55,11 @@
 
         <!-- Desktop nav -->
         <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="#leagues" class="hover:text-brand-yellow transition">Leagues</a>
-          <a href="#youth" class="hover:text-brand-yellow transition">Youth</a>
-          <a href="#how-it-works" class="hover:text-brand-yellow transition">How it works</a>
-          <a href="#register" class="hover:text-brand-yellow transition">Register</a>
-          <a href="#contact" class="hover:text-brand-yellow transition">Contact</a>
+          <a href="#leagues" class="hover:text-brand-blueLight transition">Leagues</a>
+          <a href="#youth" class="hover:text-brand-blueLight transition">Youth</a>
+          <a href="#how-it-works" class="hover:text-brand-blueLight transition">How it works</a>
+          <a href="#register" class="hover:text-brand-blueLight transition">Register</a>
+          <a href="#contact" class="hover:text-brand-blueLight transition">Contact</a>
         </nav>
       </div>
     </header>
@@ -67,39 +69,40 @@
 
       <!-- HERO -->
       <section class="relative h-[80vh] flex items-center justify-center text-center">
-  <!-- Background image -->
-  <div 
-    class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-    style="background-image: url('groupphoto.jpeg');">
-  </div>
+        <!-- Background image -->
+        <div 
+          class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style="background-image: url('groupphoto.jpeg');">
+        </div>
 
-  <!-- Dark overlay for readability -->
-  <div class="absolute inset-0 bg-black/50"></div>
+        <!-- Dark overlay for readability -->
+        <div class="absolute inset-0 bg-black/50"></div>
 
-  <!-- Content -->
-  <div class="relative z-10 max-w-3xl px-6">
-    <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight mb-4">
-      Play Dodgeball in <span class="text-brand-yellow">Auckland</span>.
-    </h1>
+        <!-- Content -->
+        <div class="relative z-10 max-w-3xl px-6">
+          <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight mb-4">
+            Play Dodgeball in <span class="text-brand-blueLight">Auckland</span>.
+          </h1>
 
-    <p class="text-slate-200 text-sm sm:text-base mb-6">
-      Social and competitive leagues for all skill levels. Join solo or with a team — everyone’s welcome.
-    </p>
+          <p class="text-slate-200 text-sm sm:text-base mb-6">
+            Social and competitive leagues for all skill levels. Join solo or with a team — everyone’s welcome.
+          </p>
 
-    <div class="flex flex-wrap items-center justify-center gap-3">
-      <a
-        href="#register"
-        class="inline-flex px-5 py-2.5 rounded-full bg-brand-yellow text-slate-900 font-medium hover:bg-yellow-300 transition">
-        Register now
-      </a>
-      <a
-        href="#leagues"
-        class="inline-flex px-5 py-2.5 rounded-full border border-slate-200/70 text-slate-100 hover:border-brand-yellow hover:text-brand-yellow transition">
-        View leagues
-      </a>
-    </div>
-  </div>
-</section>
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <a
+              href="#register"
+              class="inline-flex px-5 py-2.5 rounded-full bg-brand-blue text-white font-medium hover:bg-brand-blueLight transition">
+              Register now
+            </a>
+            <a
+              href="#leagues"
+              class="inline-flex px-5 py-2.5 rounded-full border border-white/70 text-slate-100 hover:border-brand-blueLight hover:text-brand-blueLight transition">
+              View leagues
+            </a>
+          </div>
+        </div>
+      </section>
+
       <!-- LEAGUES -->
       <section id="leagues" class="border-t border-slate-800 bg-slate-950/70">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-18">
@@ -111,13 +114,13 @@
               </p>
             </div>
             <p class="text-xs text-slate-400">
-              Social · Mixed & Womens · New players welcome
+              Social · Mixed &amp; Womens · New players welcome
             </p>
           </div>
 
           <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 text-sm">
             <!-- Grey Lynn -->
-            <a href="#" class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4 flex flex-col justify-between hover:border-brand-yellow transition">
+            <a href="#" class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4 flex flex-col justify-between hover:border-brand-blue transition">
               <div>
                 <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">(Mon) Central</p>
                 <h3 class="font-semibold mb-1">Grey Lynn · Womens</h3>
@@ -127,12 +130,12 @@
               </div>
               <div class="flex items-center justify-between text-xs text-slate-400">
                 <span>Social Dodgeball</span>
-                <span class="group-hover:text-brand-yellow">View details →</span>
+                <span class="group-hover:text-brand-blueLight">View details →</span>
               </div>
             </a>
 
             <!-- Epsom -->
-            <a href="#" class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4 flex flex-col justify-between hover:border-brand-yellow transition">
+            <a href="#" class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4 flex flex-col justify-between hover:border-brand-blue transition">
               <div>
                 <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">(Thurs) Central</p>
                 <h3 class="font-semibold mb-1">Epsom</h3>
@@ -142,12 +145,12 @@
               </div>
               <div class="flex items-center justify-between text-xs text-slate-400">
                 <span>Social Dodgeball</span>
-                <span class="group-hover:text-brand-yellow">View details →</span>
+                <span class="group-hover:text-brand-blueLight">View details →</span>
               </div>
             </a>
 
             <!-- Onehunga -->
-            <a href="#" class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4 flex flex-col justify-between hover:border-brand-yellow transition">
+            <a href="#" class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4 flex flex-col justify-between hover:border-brand-blue transition">
               <div>
                 <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">(Wed) Central · 3rd party</p>
                 <h3 class="font-semibold mb-1">Onehunga</h3>
@@ -157,12 +160,12 @@
               </div>
               <div class="flex items-center justify-between text-xs text-slate-400">
                 <span>Dodgeball For All</span>
-                <span class="group-hover:text-brand-yellow">Visit site →</span>
+                <span class="group-hover:text-brand-blueLight">Visit site →</span>
               </div>
             </a>
 
             <!-- Pakuranga -->
-            <a href="#" class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4 flex flex-col justify-between hover:border-brand-yellow transition">
+            <a href="#" class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4 flex flex-col justify-between hover:border-brand-blue transition">
               <div>
                 <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">(Mon) East · 3rd party</p>
                 <h3 class="font-semibold mb-1">Pakuranga</h3>
@@ -172,7 +175,7 @@
               </div>
               <div class="flex items-center justify-between text-xs text-slate-400">
                 <span>Dodgeball For All</span>
-                <span class="group-hover:text-brand-yellow">Visit site →</span>
+                <span class="group-hover:text-brand-blueLight">Visit site →</span>
               </div>
             </a>
           </div>
@@ -205,7 +208,7 @@
             <p class="text-xs text-slate-400 mb-4">
               Season dates, fees and registration links will be posted here, or contact us below for the latest info.
             </p>
-            <a href="#register" class="inline-flex items-center px-4 py-2 rounded-full bg-brand-yellow text-slate-900 text-xs font-medium hover:bg-yellow-300 transition">
+            <a href="#register" class="inline-flex items-center px-4 py-2 rounded-full bg-brand-blue text-white text-xs font-medium hover:bg-brand-blueLight transition">
               Register interest for youth leagues
             </a>
           </div>
@@ -243,7 +246,7 @@
             </div>
             <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
               <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">Step 3</p>
-              <h3 class="font-semibold mb-2">Show up & play</h3>
+              <h3 class="font-semibold mb-2">Show up &amp; play</h3>
               <p class="text-slate-300">
                 Turn up on game night, meet your team, warm up and get throwing. Music, good vibes, high-energy fun.
               </p>
@@ -281,7 +284,7 @@
 
           <p class="mt-4 text-xs text-center text-slate-400">
             Having trouble with the form? Email us at
-            <a href="mailto:info@dodgeballauckland.com" class="text-brand-yellow hover:underline">
+            <a href="mailto:info@dodgeballauckland.com" class="text-brand-blueLight hover:underline">
               info@dodgeballauckland.com
             </a>
             and we’ll get you sorted.
@@ -296,7 +299,7 @@
             <div>
               <h3 class="font-semibold mb-2">Contact</h3>
               <p class="text-slate-300 mb-1">
-                Email: <a href="mailto:info@dodgeballauckland.com" class="text-brand-yellow hover:underline">info@dodgeballauckland.com</a>
+                Email: <a href="mailto:info@dodgeballauckland.com" class="text-brand-blueLight hover:underline">info@dodgeballauckland.com</a>
               </p>
               <p class="text-slate-300 mb-1">
                 Phone: <span class="text-slate-200">+64 xx xxx xxxx</span>
@@ -309,10 +312,10 @@
             <div>
               <h3 class="font-semibold mb-2">Follow</h3>
               <ul class="space-y-1 text-slate-300">
-                <li><a href="#" class="hover:text-brand-yellow">Facebook</a></li>
-                <li><a href="#" class="hover:text-brand-yellow">Instagram</a></li>
-                <li><a href="#" class="hover:text-brand-yellow">TikTok</a></li>
-                <li><a href="#" class="hover:text-brand-yellow">YouTube</a></li>
+                <li><a href="#" class="hover:text-brand-blueLight">Facebook</a></li>
+                <li><a href="#" class="hover:text-brand-blueLight">Instagram</a></li>
+                <li><a href="#" class="hover:text-brand-blueLight">TikTok</a></li>
+                <li><a href="#" class="hover:text-brand-blueLight">YouTube</a></li>
               </ul>
             </div>
 
